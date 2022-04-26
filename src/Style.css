@@ -1,0 +1,124 @@
+/* import poppines font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*,::after,::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background:#fff;
+    font-family: 'Poppins';
+    background: "url(/bg1.png)" ;
+}
+/* utility class */
+.container{
+    max-width: 90%;
+    width: 1200px;
+    margin: auto;
+
+}
+.text-color{
+    color: #013a69; 
+}
+.text-center{
+    text-align: center;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+
+}
+li Link{
+    list-style: none;
+    text-decoration: none;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    color: #013a69;
+    font-weight: 700;
+    list-style: none;
+}
+.menu-list{
+    display: flex;
+}
+.menu-item{
+    text-decoration: none;
+}
+.menu-list li{
+    margin-left: 2rem;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+.menu-item{
+    list-style: none;
+    color: #013a69;
+}
+
+/* Home Page */
+.bg{
+    background: url('/public/Images/bg2.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 80vh;
+}
+.page-title{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-sec{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #013a69;
+    margin: 4rem 0rem;
+}
+
+input[type="checkbox"]{
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+}
+label{
+    display: block;
+    width: 20rem;
+    height: 2rem;
+    border: solid #10b3f4 1px;
+    border-radius: 3rem;
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+label::after {
+    content: "Get Closed";
+    width: 50%;
+    height: 100%;
+    background-color: #10b3f4;
+    position: absolute;
+    border-radius: 2rem;
+    transition: 0.5s;
+    left: 0%;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+  }
+input:checked + label:after {
+    content: "Get Started";
+    left: calc(0%);
+    transform: translateX(100%);
+}
+label span{
+    color: #fff;
+    z-index: 2;
+
+}
